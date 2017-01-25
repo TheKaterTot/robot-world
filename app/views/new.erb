@@ -1,8 +1,8 @@
 <h1>New Robot</h1>
 <form action="/robots" method="post">
-  <input type="text" name="robots[name]" placeholder="Name"></input></br>
-  <input type="text" name="robots[city]" placeholder="City"></input></br>
-  <input type="text" name="robots[state]" placeholder="State"></input></br>
-  <input type="text" name="robots[department]" placeholder="Department"></input></br>
+  <input type="text" name="robots[name]" value="<%= Faker::StarWars.droid %>"></input></br>
+  <input type="text" name="robots[city]" value="<%= Faker::StarWars.planet %>"></input></br>
+  <input type="text" name="robots[state]" value="<%= Faker::StarWars.planet %>"></input></br>
+  <input type="text" name="robots[department]" value="<%= Faker::StarWars.vehicle %>"></input></br>
   <input class="btn btn-primary" type="submit" value="Submit"></input>
 </form>
