@@ -1,5 +1,6 @@
 <h1>My Robots</h1>
 <% @robots.each do |robot| %>
+<img class="avatar" src="https://robohash.org/<%= robot.name %>.png">
 <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
   <p><%= robot.city %></p>
   <p><%= robot.state %></p>
